@@ -10,9 +10,17 @@ class PlayAVideo(MycroftSkill):
     @intent_handler("video.a.play.intent")
     def handle_video_a_play(self, message):
         self.speak_dialog("video.a.play")
-        url = self.get_video_stream(url, "/home/mycroft/test.mp4")
+        url = self.get_video_stream()
         self.log.info(url)
-        self.gui.play_video(url, "My video")
+        self.gui.play_video(url, "Youtube video")
+
+    @intent_handler("video.test.play.intent")
+    def handle_video_a_play(self, message):
+        self.speak_dialog("video.a.play")
+        url = "/home/mycroft/test.mp4"
+        self.log.info(url)
+        self.gui.play_video(url, "Test video")
+        
 
     @staticmethod
     def get_video_stream(url="https://www.youtube.com/watch?v=Gv1I0y6PHfg",
