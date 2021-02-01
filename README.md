@@ -5,9 +5,7 @@ Example skill - play a video
 
 
 ## Examples
-* "Start my vide"
 * "Start my video"
-* "Start the video"
 
 ## Credits
 krisgesling
