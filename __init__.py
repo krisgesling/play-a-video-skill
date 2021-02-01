@@ -8,7 +8,7 @@ class PlayAVideo(MycroftSkill):
         MycroftSkill.__init__(self)
 
     @intent_handler("video.a.play.intent")
-    def handle_video_a_play(self, message):
+    def handle_yt_video_a_play(self, message):
         self.speak_dialog("video.a.play")
         url = self.get_video_stream()
         self.log.info(url)
