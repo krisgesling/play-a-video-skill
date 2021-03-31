@@ -5,7 +5,8 @@ Example skill - play a video
 
 
 ## Examples
-* "Start my video"
+* "Start my video" - plays local video file - must first be added to your device at `~/test.mp4` 
+* "Start the test video" - plays Big Buck Bunny from Youtube
 
 ## Credits
 krisgesling
